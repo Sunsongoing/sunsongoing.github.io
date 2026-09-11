@@ -2,11 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Zjl's Blog">
+    <meta name="keywords" content="">
+    <meta name="author" content="Zjl">
+    <meta name="copyright" content="Zjl">
+    <title>Zjl's Blog</title>
+    <link rel="shortcut icon" href="/small_milk_dog.ico">
+    <link rel="stylesheet" href="/css/index.css?version=1.5.6">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css?version=1.5.6">
+    <script>
+    var GLOBAL_CONFIG = {
+        root: '/',
+        algolia: undefined,
+        localSearch: undefined,
+        copy: {
+            success: 'Copy successfully',
+            error: 'Copy error',
+            noSupport: 'The browser does not support'
+        }
+    }
+    </script>
 </head>
 <body>
-    
+    <i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i>
+
+    <div id="sidebar">
+        <div class="author-info">
+            <div class="author-info__avatar text-center">
+                <img src="/small_milk_dog.ico">
+            </div>
+            <div class="author-info__name text-center">Zjl</div>
+            <div class="author-info__description text-center"></div>
+            <hr>
+            <div class="author-info-articles"></div>
+        </div>
+    </div>
+
+    <nav id="nav" style="background-image: url(/img/bg.jpg)">
+        <div id="page-header">
+            <span class="pull-left">
+                <a id="site-name" href="/">Zjl's Blog</a>
+            </span>
+            <i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i>
+            <span class="pull-right menus">
+                <a class="site-page" href="/">Home</a>
+                <a class="site-page" href="/archives">Archives</a>
+                <a class="site-page" href="/tags">MyTags</a>
+                <a class="site-page" href="/categories">Categories</a>
+            </span>
+        </div>
+        <div id="site-info">
+            <div id="site-title">Zjl's Blog</div>
+            <div id="site-sub-title"></div>
+            <div id="site-social-icons">
+                <a class="social-icon" href="https://github.com/Sunsongoing/" target="_blank"><i class="fa fa-github"></i></a>
+                <a class="social-icon" href="http://weibo.com/mybluedreams" target="_blank"><i class="fa fa-weibo"></i></a>
+                <a class="social-icon" href="https://Molunerfinn/atom.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                <a class="social-icon" target="_blank"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="content-outer">
+        <div class="layout" id="content-inner">
+            <article id="recent-posts">
+                <!-- 暂无文章 -->
+                <div style="text-align:center; padding: 5rem 0; color: #99a9bf;">
+                    <p>Hi, welcome to my blog!</p>
+                    <p>Stay tuned for updates.</p>
+                </div>
+            </article>
+            <nav id="pagination">
+                <div class="pagination"></div>
+            </nav>
+        </div>
+    </div>
+
+    <footer>
+        <div class="layout" id="footer">
+            <div class="copyright">&copy;2018 By Zjl</div>
+            <div class="framework-info">
+                <span>Driven - </span>
+                <a href="http://hexo.io"><span>Hexo</span></a>
+                <span class="footer-separator">|</span>
+                <span>Theme - </span>
+                <a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a>
+            </div>
+            <div class="footer_custom_text">Hi, welcome to my <a href="https://sunsongoing.github.io">blog</a></div>
+        </div>
+    </footer>
+
+    <div id="go-up" style="display: none;">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <script src="/js/head.js"></script>
+    <script src="/js/utils.js"></script>
+    <script src="/js/sidebar.js"></script>
+    <script src="/js/transition.js"></script>
+    <script src="/js/scroll.js"></script>
+    <script src="/js/hexo-theme-melody.js"></script>
 </body>
 </html>
